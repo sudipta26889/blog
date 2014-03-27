@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0056)http://www.creepypixel.com/demos/caffeine/1.1/login.php -->
 <html dir="ltr" lang="en-US"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta charset="UTF-8">
