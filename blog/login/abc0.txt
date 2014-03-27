@@ -1,0 +1,59 @@
+<p>Mobile website development requires coding which can run on multiple devices, all with their own unique capabilities and limitations. Using progressive enhancement creates functional experiences for everyone, while simultaneously optimizing for the best devices.</p>
+<ol>
+	<li>
+		<h3><em><u><a>JAVASCRIPT</a></u></em></h3>
+		<ul>
+			<li>
+				<h4><strong>AVOID INCLUDING BULKY JS LIBRARIES</strong></h4>
+				<p>We all know how helpful Jquery and other Javascript libraries are to make our lives easier and help smooth out browser inconsistencies. However, that convenience comes at a cost, namely file size. Page speed is of utmost importance in mobile, so make sure you remove any superfluous scripts in your mobile web experiences. If you’re using Javascript to simply show/hide content or perform other simple enhancements, there’s no need to include a bulky js library. Better use some Micro-framework like <a href="http://joapp.com/" target="_blank">Joapp</a>, <a href="http://xuijs.com/" target="_blank">XUI</a>, <a href="http://zeptojs.com/" target="_blank">Zetpo.JS</a></p>
+			</li>
+			<li>
+				<h4><strong>USE FEATURE-DETECTION</strong></h4>
+				<p>It is impossible to keep tabs on what every single device is capable of. Using feature detection to determine the existence of a feature allows you to optimize the experience. For example, let’s look at an image gallery with one large image and several thumbnails. By default, clicking a thumbnail refreshes the page and replaces the larger image. Detecting the presence of AJAX allows the thumbnail click to load the new image inline without refreshing the whole page.</p>
+			</li>
+			<li>
+				<h4><strong>HIDE URL BAR TO MAXIMIZE SCREEN REAL ESTATE</strong></h4>
+				<p>Add this for touch devices: window.scrollTo(0, 1) to hide the URL bar on iPhone, Android, and other touch devices that have a hide-able URL bar. Note that the page needs to be longer than the screen for this trick.</p>
+			</li>
+		</ul>
+	</li>		
+	<li>
+		<h3><em><u><a>MEDIA</a></u></em></h3>
+		<ul>
+			<li>
+				<h4><strong>Image- USE DATA URIS TO SAVE HTTP REQUESTS </strong></h4>
+				<p>Instate of using image from another location, use data URI to display image. Utilizing Data URI for images reduces the amount of requests needed to fetch the images. It reduces the file size as well as the http request. To know more about data URI please visit <a href="http://css-tricks.com/data-uris/" target="_blank">here</a>.</p>
+			</li>
+			<li>
+				<h4><strong>SERVE THE RIGHT VIDEO FORMAT</strong></h4>
+				<p style=" display: inline; ">Delivering video to mobile website is a hot mess because there are plethora of mobile in the market. Different devices support different video formats and codecs. So make sure your users are getting the right format for their device. Currently the only way to accurately serve the correct video format is to use server-side detection. The HTML5 <pre style=" display: inline; "><</pre>video<pre style=" display: inline; ">></pre> element is still very quirky/inconsistent on mobile browsers. Check comparability <a href="http://mobilehtml5.org/" target="_blank">here</a></p>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<h3><em><u><a>PERFORMANCE</a></u></em></h3>
+		<ul>
+			<li>
+				<h4><strong>REDUCE HTTP REQUESTS </strong></h4>
+				<ul>
+				  <li><strong>Minimize your code.</strong>
+				    <p>If you code less, optimize the amount of data transferred, your page will load faster.</p>
+				  </li>
+				  <li><strong>Eliminate redirects.</strong>
+				    <p>Sometimes web pages and web services will redirect a single request several times. If your service requires redirects, perform the redirection server-side rather than client side, in order to reduce client-side redirection requests.</p>
+				  </li>
+				  <li><strong>Load contents lazily.</strong>
+				    <p>Transfer data when needed and preload where appropriate. Don't load images that will never be seen by the end user. Means If you have a mobile application that displays a gallery of images, consider downloading the previous and next image to increase speed, but don't load images that are far "out of reach".</p>
+				  </li>
+				  <li><strong> Use an application cache for local content storage.</strong>
+				    <p>HTML5 browsers (Mobile Safari, Android browser,Opera Mini) can use an application cache to both reduce page startup time and to enable fast browsing.</p>
+				  </li>
+				</ul>
+			</li>
+			<li>
+				<h4><strong>SERVE THE RIGHT VIDEO FORMAT</strong></h4>
+				<p style=" display: inline; ">Delivering video to mobile website is a hot mess because there are plethora of mobile in the market. Different devices support different video formats and codecs. So make sure your users are getting the right format for their device. Currently the only way to accurately serve the correct video format is to use server-side detection. The HTML5 <pre style=" display: inline; "><</pre>video<pre style=" display: inline; ">></pre> element is still very quirky/inconsistent on mobile browsers. Check comparability <a href="http://mobilehtml5.org/" target="_blank">here</a></p>
+			</li>
+		</ul>
+	</li>
+</ol>
